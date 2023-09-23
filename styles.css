@@ -1,0 +1,101 @@
+/*1. General styles*/
+/*2. Nav styles*/
+/*3. Header styles*/
+/*4. Ingredientes styles*/
+/*5. Menú styles*/
+/*6. Pedido styles*/
+/*7. Footer styles*/
+/*8. Media queries*/
+
+/*1. General styles*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Bungee', cursive;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-family: 'Bungee', cursive;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: 'Bungee', cursive;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-family: 'Bungee', cursive;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Bungee', cursive;
+}
+
+/*2. Nav styles*/
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  background-color: white;
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: auto;
+  height: 60px;
+  list-style-type: none;
+}
+
+nav img {
+  width: 50px;
+  height: auto;
+}
+
+#redes {
+  display: flex;
+  line-height: 1rem; /*esta línea centra, al final, todos los elementos en el nav*/
+}
+
+#redes img {
+  padding: 5px;
+}
+
+/*3. Header styles*/
+header {
+  height: 750px;
+  width: auto;
+  background-image: url("resources/Hamburguesas/TheSpruce_Diana Chistruga.portobelloBurger.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  text-align: center;
+}
+
+/*4. Ingredientes styles*/
+#ingredientes {
+  display: grid;
+  grid-template: repeat(2, );
+}
+
+/*5. Menú styles*/
+/*6. Pedido styles*/
+/*7. Footer styles*/
+/*8. Media queries*/
