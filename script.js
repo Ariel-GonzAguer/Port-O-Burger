@@ -2,6 +2,7 @@
 // const formulario = document.getElementsById("formulario");
 const mostrarPedidoBtn = document.getElementById("mostrarPedido");
 const resultado = document.getElementById("resultado");
+const procederConPagoBtn = document.getElementById("procederConPago");
 
 // eventListeners
 mostrarPedidoBtn.addEventListener("click", () => {
@@ -29,3 +30,7 @@ mostrarPedidoBtn.addEventListener("click", () => {
   Si está todo correctó procedé con el pago :)
   `;
 });
+
+procederConPagoBtn.addEventListener("click", () => {
+  window.open("pagoMock.html"); //esto abre una nueva página al dar click al botón indicado
+})
