@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Port O Burger</title>
   <link href="styles.css" rel="stylesheet">
-  <link src="script.js" defer>
+  <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Martian+Mono&display=swap" rel="stylesheet">
@@ -77,7 +77,7 @@
       <img src="resources\ingredientes\tomato-2823820.jpg" alt="foto de un tomate" class="imgIngrediente"
         id="elementoGrid13">
       <p id="elementoGrid14"><b>Jugoso Canario</b><br><br>
-        Originario de las Islas Canarias, este tomate redonde con su sabor jugoso, ligeramente ácido y dulce también es 
+        Originario de las Islas Canarias, este tomate redonde con su sabor jugoso, ligeramente ácido y dulce también es
         producido en casa.</p>
 
       <img src="resources\ingredientes\tomasPagot_fullOfPlants.cheesse.webp" alt="foto de rebanadas de queso"
@@ -163,8 +163,7 @@
 
         <div id="teNegro">
           <h4>Té negro con durazno</h4>
-          <img src="resources\bebidas\te.durazno.jpg" alt="foto de vaso con té negro con durazno"
-            class="imgBebida">
+          <img src="resources\bebidas\te.durazno.jpg" alt="foto de vaso con té negro con durazno" class="imgBebida">
         </div>
       </div>
 
@@ -181,66 +180,63 @@
       </div>
     </section>
 
-      <img src="resources\iconos\hamburguesa.png" alt="hamburguesa en blanco y negro" id="imgPrePedido">
+    <img src="resources\iconos\hamburguesa.png" alt="hamburguesa en blanco y negro" id="imgPrePedido">
 
     <!--Pedido section-->
     <section id="pedido">
-      <form action="#" method="POST">
+      <form action="" method="GET" id="formulario">
         <h2>Armá tu pedido</h2>
         <p>(armá tu pedido una hamburguesa a la vez, por favor)</p>
 
         <p><b>¿Cuál Burger querés?</b></p>
         <label for="PortOBurger">Port-O-Burger</label>
-        <input id="PortOBurger" name="hamburguesa" type="radio" value="PortOBurger">
+        <input id="PortOBurger" name="hamburguesa" type="radio" value="Port-O-Burger" required checked>
         <br>
         <label for="ReverBurgerForm">Rever-Burger</label>
-        <input id="ReverBurgerForm" name="hamburguesa" type="radio" value="ReverBurgerForm">
+        <input id="ReverBurgerForm" name="hamburguesa" type="radio" value="Rever-Burger">
         <br><br>
         <p><b>¿Cuáles papas querés?</b></p>
         <label for="tostadas">Papas tostadas</label>
-        <input id="tostadas" name="papas" type="radio" value="tostadas">
+        <input id="tostadas" name="papas" type="radio" value="Tostadas" required checked>
         <br>
         <label for="fritas">Papas fritas</label>
-        <input id="fritas" name="papas" type="radio" value="fritas">
+        <input id="fritas" name="papas" type="radio" value="Fritas">
         <br><br>
 
         <p><b>¿Qué querés tomar?</b></p>
         <label for="jugoDeManzana">Jugo de manzana</label>
-        <input id="jugoDeManzana" name="bebida" type="radio" value="jugoDeManzana">
+        <input id="jugoDeManzana" name="bebida" type="radio" value="Jugo de manzana" required >
         <br>
         <label for="jugoDePiña">Jugo de piña</label>
-        <input id="jugoDePiña" name="bebida" type="radio" value="jugoDePiña">
+        <input id="jugoDePiña" name="bebida" type="radio" value="Jugo de piña">
         <br>
         <label for="teDurazno">Té negro con durazno</label>
-        <input id="teDurazno" name="bebida" type="radio" value="teDurazno">
+        <input id="teDurazno" name="bebida" type="radio" value="Té negreo con durazno">
         <br>
         <label for="Midnigth">Midnigth Porter</label>
-        <input id="Midnigth" name="bebida" type="radio" value="Midnigth">
+        <input id="Midnigth" name="bebida" type="radio" value="Midnigth Porter">
         <br>
         <label for="Gose">Super Gosé</label>
-        <input id="Gose" name="bebida" type="radio" value="Gose">
+        <input id="Gose" name="bebida" type="radio" value="Super Gosé" checked>
         <br>
 
         <h3>Adicionales</h3>
-        <label for="postres"><b>¿Querés algún postre?</b></label>
-        <select id="postres" name="postres">
-          <option value="naranChoco">Queque NaranChoco</option>
-          <option value="tiramizu">Tiramizú</option>
-          <option value="no">Sin postre</option>
+        <label for="postre"><b>¿Querés algún postre?</b></label>
+        <select id="postre" name="postre" required>
+          <option value="Sin postre">Sin postre</option>
+          <option value="Queque NaranChoco">Queque NaranChoco</option>
+          <option value="Tiramizu">Tiramizú</option>
         </select><br><br>
 
         <p><b>Agregale extras a tu Burger</b></p>
         <label for="aguacate">Aguacate</label>
         <input id="aguacate" name="extra" type="checkbox" value="aguacate">
         <br>
-        <label for="chileDulce">Pepperoni</label>
-        <input id="chileDulce" name="extra" type="checkbox" value="chileDulce">
-        <br>
-        <label for="mayonesa">Mayonesa</label>
-        <input id="mayonesa" name="extra" type="checkbox" value="mayonesa">
+        <label for="chileDulce">Chile Dulce</label>
+        <input id="chileDulce" name="extra" type="checkbox" value="chile dulce">
         <br>
         <label for="porto">Portobello</label>
-        <input id="porto" name="extra" type="checkbox" value="porto">
+        <input id="porto" name="extra" type="checkbox" value="Portobello">
         <br>
         <label for="lechuga">Lechuga</label>
         <input id="lechuga" name="extra" type="checkbox" value="lechuga">
@@ -253,22 +249,30 @@
         <br>
         <label for="tomate">Tomate</label>
         <input id="tomate" name="extra" type="checkbox" value="tomate">
+        <br>
+        <label for="picante">Salsa Picante Fermentada</label>
+        <input id="picante" name="extra" type="checkbox" value="Salsa Picante Fermentada">
         <br><br>
         <label for="textoExtra"><b>¿Tenés alguna petición en particular?</b></label>
         <br>
-        <textarea id="textoExtra" name="textoExtra" rows="5" cols="30" placeholder="Escribí si querés excluir algún ingrediente, por ejemplo...">
+        <textarea id="textoExtra" name="textoExtra" rows="5" cols="30"
+          placeholder="Escribí si querés excluir algún ingrediente, etc. Por ejemplo: No agregar tomate, por favor.">
   </textarea>
         <br>
-        <input type="submit" value="agregar">
+        <input type="button" value="agregar"><br><br>
+        <input type="button" value="Mostrar Pedido" id="mostrarPedido">
 
         <h3>Confirmá tu orden:</h3>
-        <div id="ordenFinal">
-          <p> </p>
-        </div>
-        <input type="button" value="Enviar pedido">
-      </form>
-    </section>
+        <div id="resultado">Tu pedido se mostrará acá.</div>
 
+        <input type="button" value="Proceder con pago" id="procederConPago"><br>
+        <div id="gracias">
+          <h2>¡Gracias por tu pedido!</h2>
+          <p>Pronto serás redirigido a la página de Pago</p>
+        </div>
+      </form>
+
+    </section>
   </main>
 
   <!--footer section-->

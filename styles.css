@@ -191,11 +191,12 @@ header {
   grid-template: repeat(1, 1fr) / repeat(3, 1fr);
   align-items: center;
   margin: 50px auto;
+  width: 100%;
 }
 
 .imgAcompañamiento {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
 }
 
@@ -247,7 +248,7 @@ header {
   margin-bottom: 40px;
 }
 
-#ordenFinal {
+#resultado {
   border: 2px black solid;
   height: 300px;
   width: 400px;
@@ -256,6 +257,10 @@ header {
 
 form {
  margin: 0 auto 100px;
+ }
+
+ #gracias {
+  display: none;
  }
 
 /*7. Footer styles*/
