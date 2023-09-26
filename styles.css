@@ -50,7 +50,7 @@ a {
   font-family: 'Bungee', cursive;
 }
 
-p{
+p {
   font-size: 1.2rem;
 }
 
@@ -59,10 +59,6 @@ nav {
   position: sticky;
   top: 0;
   border-bottom: 2px black solid;
-}
-
-nav.sticky.scrolling root {
-  border-color: red;
 }
 
 nav ul {
@@ -83,12 +79,7 @@ a:hover {
 }
 
 #redes a:hover {
-  background-color: transparent  !important;
-}
-
-nav img {
-  width: 50px;
-  height: auto;
+  background-color: transparent !important;
 }
 
 #redes {
@@ -99,6 +90,7 @@ nav img {
 
 #redes img {
   padding: 5px;
+  width: 50px;
 }
 
 /*3. Header styles*/
@@ -112,6 +104,10 @@ header {
   text-align: center;
   margin-bottom: 150px;
   border-bottom: 2px black solid;
+}
+
+.h1Small {
+  display: none;
 }
 
 /*4. Ingredientes styles*/
@@ -279,6 +275,10 @@ form {
 }
 
 /*7. Footer styles*/
+#frecuentesSmall {
+  display: none;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -287,6 +287,305 @@ footer {
 }
 
 /*8. Media queries*/
+/*media queries for small smartphones*/
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+
+  /*1. General styles*/
+  h1 {
+    font-size: 2.8rem;
+    color: white;
+    text-shadow:
+      -2px 1px 1px black,
+      2px 1px 1px black,
+      1px -2px 1px black,
+      1px 2px 1px black;
+  }
+
+  h2 {
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  /*2. Nav styles*/
+  nav {
+    margin-top: 3px;
+    height: auto;
+    position: sticky;
+    /*falta corregir que funcione el sticky. tal vez sea por un overflow en el body*/
+    top: 0;
+    border-bottom: 2px black solid;
+  }
+
+  nav ul {
+    grid-template-rows: 1;
+    grid-template-columns: repeat(3, 33%);
+    line-height: 20px;
+  }
+
+  #redes img {
+    width: auto;
+    height: 30px;
+  }
+
+  #menuGrid1 {
+    grid-area: 1/1/2/2;
+  }
+
+  #menuGrid2 {
+    display: none;
+  }
+
+  #menuGrid3 {
+    display: none;
+  }
+
+  #menuGrid4 {
+    grid-area: 1/2/2/3;
+    border-bottom: 2px black solid;
+  }
+
+  #redes {
+    grid-area: 1/3/2/4;
+  }
+
+  /*3. Header styles*/
+  header {
+    height: 200px;
+    width: auto;
+    background-image: url("resources/Hamburguesas/TheSpruce_Diana Chistruga.portobelloBurger.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+    border-bottom: 2px black solid;
+    line-height: 65px;
+    margin-bottom: 40px;
+  }
+
+  .h1Small {
+    display: block;
+  }
+
+  .h1Big {
+    display: none;
+  }
+
+  /*4. Ingredientes styles*/
+  #ingredientes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px auto;
+  }
+
+  #ingredientes p {
+    margin: 15px 20px 15px;
+  }
+
+  .imgIngrediente {
+    width: 90%;
+    height: 300px;
+    margin: 5px auto;
+    border-radius: 5px;
+  }
+
+  /*5. Menú styles*/
+  .imgBurger {
+    width: 90%;
+    height: auto;
+    margin: 25px auto;
+  }
+
+  #acompañamientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 100%;
+  }
+
+  span {
+    display: none;
+  }
+
+  .imgAcompañamiento {
+    width: 85%;
+    height: 200px;
+  }
+
+  #menu #beers {
+    margin: 20px auto;
+  }
+
+  #beers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .imgBeer {
+    width: 200px;
+    height: auto;
+  }
+
+  #bebidas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+  }
+
+  .imgBebida {
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  #postres .imgIngrediente {
+    height: auto;
+    width: 90%;
+  }
+
+  #menu {
+    margin-bottom: 40px;
+  }
+
+  /*6. Pedido styles*/
+  #imgPrePedido {
+    height: 100px;
+    margin-bottom: 40px;
+  }
+
+  #resultado {
+    border: 2px black solid;
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  form {
+    margin: 0 auto 50px;
+  }
+
+  /*7. Footer styles*/
+  #frecuentesSmall {
+    display: block;
+    text-decoration: underline solid 3px;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    height: 40px;
+    line-height: 20px;
+  }
+
+  footer p {
+    font-size: 0.6rem;
+  }
+
+  /*pagoMock*/
+  #redirigiendo {
+    font-size: 2rem;
+    color: black;
+    text-shadow: none;
+  }
+
+  #burgerGiratoria {
+    width: 50%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+
+}
+
+
+/*media queries for small laptops or big tablets*/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+    line-height: 25px;
+  }
+
+
+  /*3. Header styles*/
+  header {
+    height: 500px;
+    margin-bottom: 100px;
+  }
+
+  .h1Small {
+    display: none;
+  }
+
+  /*4. Ingredientes styles*/
+  #ingredientes {
+    width: 100%;
+    grid-template: repeat(8, 1fr) / repeat(2, 50%);
+  }
+
+  #ingredientes p {
+    margin: auto 20px;
+  }
+
+  .imgIngrediente {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+  }
+
+  /*5. Menú styles*/
+  span {
+  display: none;
+  }
+
+  #acompañamientos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 100%;
+  }
+
+  .imgAcompañamiento {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+  }
+
+  /*7. Footer styles*/
+  #frecuentesSmall {
+    display: none;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    height: 60px;
+    line-height: 20px;
+    padding-top: 10px;
+  }
+
+}
+
+
+
 
 /*9. Animations*/
 .rotate-center {

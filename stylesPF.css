@@ -31,9 +31,24 @@ h4 {
   font-family: 'Bungee', cursive;
 }
 
-p {
+p,
+a {
   font-size: 1.2rem;
-    font-family: 'Martian Mono', monospace;
+  font-family: 'Martian Mono', monospace;
+}
+
+a {
+  text-align: center;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: 2px black solid;
+}
+
+a:hover {
+  color: black;
+  background-color: white;
+  border: 2px black solid;
 }
 
 /*2. Header styles*/
@@ -55,4 +70,46 @@ footer {
   color: white;
   height: 30px;
   line-height: 30px;
+}
+
+/*media queries*/
+@media only screen and (min-width: 319px) and (max-width: 767px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    line-height: 25px;
+    margin: 30px auto 10px;
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  header {
+    height: 200px;
+    line-height: 50px
+  }
+
+  #finalBurger {
+    width: 80%;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+    height: 40px;
+    line-height: 20px;
+  }
+
+  footer p {
+    font-size: 0.6rem;
+  }
+
 }
