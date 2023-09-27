@@ -15,6 +15,10 @@ html {
   text-align: center;
 }
 
+main{
+  padding: 0 1rem;
+}
+
 h1 {
   font-family: 'Bungee', cursive;
   font-size: 4rem;
@@ -27,6 +31,7 @@ h1 {
 }
 
 h4 {
+margin-top: 2rem;
   font-size: 1.5rem;
   font-family: 'Bungee', cursive;
 }
@@ -53,7 +58,7 @@ a:hover {
 
 /*2. Header styles*/
 header {
-  height: 400px;
+  height: auto;
   width: auto;
   background-image: url("resources/ingredientes/portobelo.grill.jpg");
   background-repeat: no-repeat;
@@ -65,15 +70,19 @@ header {
 }
 
 /*3. Footer styles*/
+#finalBurger {
+  width: 30%;
+}
+
 footer {
   background-color: black;
   color: white;
-  height: 30px;
+  height: auto;
   line-height: 30px;
 }
 
 /*media queries*/
-@media only screen and (min-width: 319px) and (max-width: 767px) {
+@media only screen and (min-width: 319px) and (max-width: 374px) {
   h1 {
     font-size: 2rem;
   }
@@ -97,14 +106,9 @@ footer {
     line-height: 50px
   }
 
-  #finalBurger {
-    width: 80%;
-  }
-
   footer {
     background-color: black;
     color: white;
-    height: 40px;
     line-height: 20px;
   }
 
@@ -112,4 +116,57 @@ footer {
     font-size: 0.6rem;
   }
 
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+
+  header {
+  height: 200px;
+  line-height: 50px;
+  padding-top: 50px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  footer {
+  line-height: 20px;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+ header {
+  height: 250px;
+  line-height: 110px;
+  padding-top: 50px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+   footer p {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  header {
+  height: 300px;
+  line-height: 120px;
+  padding-top: 50px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+   footer p {
+    font-size: 0.9rem;
+  }
 }

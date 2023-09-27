@@ -398,7 +398,7 @@ footer {
   }
 
   .imgIngrediente {
-    width: 90%;
+    width: 75%;
     height: 300px;
     margin: 5px auto;
     border-radius: 5px;
@@ -417,10 +417,6 @@ footer {
     justify-content: space-around;
     margin: 50px auto;
     width: 100%;
-  }
-
-  span {
-    display: none;
   }
 
   .imgAcompañamiento {
@@ -513,9 +509,7 @@ footer {
     margin-top: 30px;
   }
 
-
 }
-
 
 /*media queries for small laptops or big tablets*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -551,9 +545,6 @@ footer {
   }
 
   /*5. Menú styles*/
-  span {
-  display: none;
-  }
 
   #acompañamientos {
     display: flex;
@@ -583,9 +574,6 @@ footer {
   }
 
 }
-
-
-
 
 /*9. Animations*/
 .rotate-center {
