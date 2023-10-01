@@ -3,6 +3,8 @@
 const mostrarPedidoBtn = document.getElementById("mostrarPedido");
 const resultado = document.getElementById("resultado");
 const procederConPagoBtn = document.getElementById("procederConPago");
+const agregarBurgerBtn = document.getElementById("agregarBurger");
+const listaPedidosUl = document.getElementById("listaPedidosUl");
 
 // eventListeners
 mostrarPedidoBtn.addEventListener("click", () => {
@@ -27,9 +29,15 @@ mostrarPedidoBtn.addEventListener("click", () => {
   Tu postre: ${postre}.
   Tus extras: ${extrasSeleccionados}.
   Tus notas: ${textoExtra}.
-  Si está todo correctó procedé con el pago :)
   `;
 });
+
+
+agregarBurgerBtn.addEventListener("click", () => {
+  let nuevaBurger = document.createElement("li");
+  nuevaBurger.textContent = resultado.innerText;
+  document.getElementById("listaPedidosUl").appendChild(nuevaBurger);
+})
 
 procederConPagoBtn.addEventListener("click", () => {
   window.open("pagoMock.html"); //esto abre una nueva página al dar click al botón indicado

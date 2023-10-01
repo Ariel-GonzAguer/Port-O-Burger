@@ -266,8 +266,25 @@ header {
 #resultado {
   border: 2px black solid;
   height: 300px;
-  width: 400px;
+  width: 95%;
   margin: 0 auto;
+}
+
+#listaPedidosDiv {
+  border: 2px black solid;
+  height: auto;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+#listaPedidosDiv li {
+  margin: 9px 5px;
+  list-style: none;
+}
+
+#listaPedidosDiv li::before {
+ content: url("resources/iconos/miniBurger.png");
 }
 
 form {
@@ -298,7 +315,7 @@ footer {
 }
 
 /*8. Media queries*/
-/*media queries for small smartphones*/
+/*media queries for small, medium and large smartphones*/
 @media only screen and (min-width: 319px) and (max-width: 767px) {
 
   /*1. General styles*/
@@ -314,6 +331,7 @@ footer {
 
   h2 {
     font-size: 1.9rem;
+    line-height: 2.5rem;
   }
 
   h3 {
@@ -337,7 +355,6 @@ footer {
     margin-top: 3px;
     height: auto;
     position: sticky;
-    /*falta corregir que funcione el sticky. tal vez sea por un overflow en el body*/
     top: 0;
     border-bottom: 2px black solid;
   }
@@ -398,7 +415,7 @@ footer {
 
   /*4. Ingredientes styles*/
   #ingredientes {
-    width: 100%;
+    width: 89%;
     display: flex;
     flex-wrap: wrap;
     margin: 25px auto;
@@ -446,9 +463,15 @@ footer {
     width: 100%;
   }
 
+  #midnigth,
+  #superGose {
+    margin: 30px auto 10px;
+  }
+
   .imgBeer {
     width: 200px;
     height: auto;
+    border-radius: 5px;
   }
 
   #bebidas {
@@ -462,6 +485,7 @@ footer {
   .imgBebida {
     height: 300px;
     border-radius: 50%;
+    padding: 5px 15px;
   }
 
   #postres .imgIngrediente {
@@ -482,13 +506,13 @@ footer {
   #resultado {
     border: 2px black solid;
     height: 300px;
-    width: 100%;
     margin: 0 auto;
   }
 
   form {
     margin: 0 auto 50px;
   }
+
 
   /*7. Footer styles*/
   #frecuentesSmall {
@@ -509,6 +533,8 @@ footer {
 
   /*pagoMock*/
   #redirigiendo {
+    margin: 100px 15px;
+    line-height: 2.5rem;
     font-size: 2rem;
     color: black;
     text-shadow: none;

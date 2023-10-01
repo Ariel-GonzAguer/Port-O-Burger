@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Port O Burger</title>
+  <meta name="keywords" content="burger, porto, vegan">
+  <meta name="description" content="Port-O-Burger página">
+  <meta name="author" content="diosDeNada_Arie/ariegonzaguer@gmail.com">
+
   <link href="styles.css" rel="stylesheet">
   <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +20,7 @@
 <body>
 
   <!--Nav section-->
-  
+
   <nav>
     <ul>
       <li id="menuGrid1"><a href="#menu">Menú</a></li>
@@ -209,7 +213,7 @@
 
         <p><b>¿Qué querés tomar?</b></p>
         <label for="jugoDeManzana">Jugo de manzana</label>
-        <input id="jugoDeManzana" name="bebida" type="radio" value="Jugo de manzana" required >
+        <input id="jugoDeManzana" name="bebida" type="radio" value="Jugo de manzana" required>
         <br>
         <label for="jugoDePiña">Jugo de piña</label>
         <input id="jugoDePiña" name="bebida" type="radio" value="Jugo de piña">
@@ -263,18 +267,27 @@
           placeholder="Escribí si querés excluir algún ingrediente, etc. Por ejemplo: No agregar tomate, por favor.">
   </textarea>
         <br>
-        <input type="button" value="agregar"><br><br>
+
         <input type="button" value="Mostrar Pedido" id="mostrarPedido">
 
         <h3>Confirmá tu orden:</h3>
-        <div id="resultado">Tu pedido se mostrará acá.</div>
+        <div id="resultado">Tu burger se mostrará acá.</div>
+        <input type="button" value="Agregar burger" id="agregarBurger"><br><br>
+
+        <div>
+          <p><b>Acá se mostrarán las burgers de tu pedido final</b></p>
+              <div id="listaPedidosDiv">
+              <ol id="listaPedidosUl"></ol>
+              </div>
+        </div>
 
         <input type="button" value="Proceder con pago" id="procederConPago"><br>
       </form>
 
     </section>
 
-    <div id="frecuentesSmall"><a href="preguntasFrecuentes.html" target="_blank"> >> Preguntas Frecuentes << </a></div>
+    <div id="frecuentesSmall"><a href="preguntasFrecuentes.html" target="_blank"> >> Preguntas Frecuentes << </a>
+    </div>
   </main>
 
   <!--footer section-->

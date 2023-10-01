@@ -2,7 +2,6 @@
 /*2. Header styles*/
 /*3. Footer styles*/
 
-
 /*1. General styles*/
 * {
   box-sizing: border-box;
@@ -15,7 +14,7 @@ html {
   text-align: center;
 }
 
-main{
+main {
   padding: 0 1rem;
 }
 
@@ -31,7 +30,7 @@ h1 {
 }
 
 h4 {
-margin-top: 2rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   font-family: 'Bungee', cursive;
 }
@@ -121,9 +120,9 @@ footer {
 @media only screen and (min-width: 375px) and (max-width: 424px) {
 
   header {
-  height: 200px;
-  line-height: 50px;
-  padding-top: 50px;
+    height: 200px;
+    line-height: 50px;
+    padding-top: 50px;
   }
 
   h1 {
@@ -131,7 +130,7 @@ footer {
   }
 
   footer {
-  line-height: 20px;
+    line-height: 20px;
   }
 
   footer p {
@@ -140,33 +139,33 @@ footer {
 }
 
 @media only screen and (min-width: 425px) and (max-width: 767px) {
- header {
-  height: 250px;
-  line-height: 110px;
-  padding-top: 50px;
+  header {
+    height: 250px;
+    line-height: 110px;
+    padding-top: 50px;
   }
 
   h1 {
     font-size: 2rem;
   }
 
-   footer p {
+  footer p {
     font-size: 0.6rem;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   header {
-  height: 300px;
-  line-height: 120px;
-  padding-top: 50px;
+    height: 300px;
+    line-height: 120px;
+    padding-top: 50px;
   }
 
   h1 {
     font-size: 2.5rem;
   }
 
-   footer p {
+  footer p {
     font-size: 0.9rem;
   }
 }
