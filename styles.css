@@ -93,6 +93,10 @@ a:hover {
   width: 50px;
 }
 
+img {
+  object-fit: cover; /*esta línea indica a las imagenes que tomen el espacio establecido sin deformarse*/
+}
+
 /*3. Header styles*/
 header {
   height: 750px;
@@ -196,6 +200,7 @@ header {
 }
 
 /*5. Menú styles*/
+
 .imgBurger {
   width: 450px;
   height: auto;
@@ -573,6 +578,7 @@ footer {
     width: 300px;
     height: 300px;
     margin: 20px auto;
+    
   }
 
   /*5. Menú styles*/

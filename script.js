@@ -17,7 +17,7 @@ mostrarPedidoBtn.addEventListener("click", () => {
   const extrasSeleccionados = [];
   extras.forEach((extra) => { //esta función toma los checkboxes que está "checkeados" y los almacena en el array de extrasSeleccionados.
   if (extra.checked) {
-    extrasSeleccionados.push( " "+extra.value );
+    extrasSeleccionados.push( " " + extra.value );
   }
 });
 
