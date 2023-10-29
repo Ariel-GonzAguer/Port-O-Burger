@@ -1,1 +1,1 @@
-investigar trabajar en diferentes branches y mantener archivos. aplicar carrusel al menu con cards
+aplicar JS para hacer el menu un slider automático
