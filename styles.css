@@ -54,6 +54,10 @@ p {
   font-size: 1.2rem;
 }
 
+#menu, #pedido, #ingredientes {
+  scroll-margin-top: 4rem; /*Esta línea define dónde queda la pantalla al hacer click en los elementos del nav*/
+}
+
 /*2. Nav styles*/
 nav {
   position: sticky;
@@ -392,14 +396,13 @@ footer {
   }
 
   nav ul {
-    grid-template-rows: 1;
-    grid-template-columns: repeat(3, 33%);
-    line-height: 20px;
+    justify-content: space-around ;
   }
 
-  #redes img {
-    width: auto;
+  #divRedes img {
+    width: 30px;
     height: 30px;
+    margin: 0;
   }
 
   #menuGrid1 {
@@ -576,8 +579,9 @@ footer {
 
 /*media queries for small laptops or big tablets*/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  nav {
-    line-height: 25px;
+  #divRedes img {
+    width: 30px;
+    height: 30px;
   }
 
 
