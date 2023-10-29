@@ -63,13 +63,14 @@ nav {
 
 nav ul {
   background-color: white;
-  display: grid;
-  grid-template: 1fr / repeat(5, 1fr);
-  justify-items: center;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: nowrap;
   width: auto;
   height: 60px;
   list-style-type: none;
+  line-height: 1rem;
 }
 
 a:hover {
@@ -78,19 +79,21 @@ a:hover {
   border-radius: 5px;
 }
 
-#redes a:hover {
+#divRedes {
+  display: flex;
+}
+
+#divRedes li {
+  margin: 0 6px;
+}
+
+.redes:hover {
   background-color: transparent !important;
 }
 
-#redes {
-  display: flex;
-  line-height: 1rem;
-  /*esta línea centra, al final, todos los elementos en el nav*/
-}
-
-#redes img {
-  padding: 5px;
+.redes img {
   width: 50px;
+  height: 50px;
 }
 
 img {
@@ -263,9 +266,33 @@ header {
 }
 
 /*6. Pedido styles*/
+label {
+  display: inline-flex; /* Esta línea hace que las etiquetas se comporten como en línea, lo que permiten centrarlas verticalmente*/
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+  vertical-align: middle; /* Centra verticalmente */
+  margin-right: 10px; /* Espacio entre los botones de radio y las etiquetas */
+  display: inline-flex;
+
+}
+
+#mostrarPedido, #agregarBurger, #procederConPago {
+  width: 150px;
+  height: 50px;
+}
+
 #imgPrePedido {
   height: 100px;
   margin-bottom: 40px;
+}
+
+#textoExtra {
+  height: 200px;
+  width: 85%;
 }
 
 #resultado {
