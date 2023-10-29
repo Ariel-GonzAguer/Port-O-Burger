@@ -11,12 +11,14 @@
 /*1. General styles*/
 @font-face {
   font-family:'Bungee';
-  src: url('resources/Bungee,Martian_Mono/Bungee/Bungee-Regular.ttf') format('truetype')
+  src: url('resources/Bungee,Martian_Mono/Bungee/Bungee-Regular.ttf') format('truetype');
+  font-display: swap; /*este atributo:valor aseguran que se muestre el texto mientras cargan las fuentes, de otra manera el texto aparece "invisible"*/
 }
 
 @font-face {
   font-family: 'Martian Mono';
-  src: url('resources/Bungee,Martian_Mono/Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf') format('truetype'),;
+  src: url('resources/Bungee,Martian_Mono/Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf') format('truetype');
+  font-display: swap;
 }
 
 
@@ -484,7 +486,7 @@ footer {
   /*5. Menú styles*/
   .imgBurger {
     width: 90%;
-    height: auto;
+    height: 570;
     margin: 25px auto;
   }
 
@@ -519,7 +521,7 @@ footer {
 
   .imgBeer {
     width: 200px;
-    height: auto;
+    height: 300px;
     border-radius: 5px;
   }
 
