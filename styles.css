@@ -9,6 +9,18 @@
 /*9. Animations */
 
 /*1. General styles*/
+@font-face {
+  font-family:'Bungee';
+  src: url('resources/Bungee,Martian_Mono/Bungee/Bungee-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Martian Mono';
+  src: url('resources/Bungee,Martian_Mono/Martian_Mono/MartianMono-VariableFont_wdth,wght.ttf') format('truetype'),;
+}
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -210,7 +222,7 @@ header {
 
 .imgBurger {
   width: 450px;
-  height: auto;
+  height: 675px;
   margin: 25px auto;
 }
 
@@ -250,7 +262,7 @@ header {
 
 .imgBeer {
   width: 200px;
-  height: auto;
+  height: 300px;
 }
 
 #bebidas {
@@ -262,6 +274,7 @@ header {
 
 .imgBebida {
   height: 300px;
+  width: 200px;
   border-radius: 50%;
 }
 
@@ -290,6 +303,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 #imgPrePedido {
+  width: 111px ;
   height: 100px;
   margin-bottom: 40px;
 }
@@ -430,7 +444,7 @@ footer {
   header {
     height: 200px;
     width: auto;
-    background-image: url("resources/Hamburguesas/TheSpruce_Diana Chistruga.portobelloBurger.jpg");
+    background-image: url("resources/Hamburguesas/TheSpruce_Diana-Chistruga.portobelloBurger.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -524,8 +538,8 @@ footer {
   }
 
   #postres .imgIngrediente {
-    height: auto;
-    width: 90%;
+    height: 300px;
+    width: 350px;
   }
 
   #menu {
