@@ -10,9 +10,10 @@
 
 /*1. General styles*/
 @font-face {
-  font-family:'Bungee';
+  font-family: 'Bungee';
   src: url('resources/Bungee,Martian_Mono/Bungee/Bungee-Regular.ttf') format('truetype');
-  font-display: swap; /*este atributo:valor aseguran que se muestre el texto mientras cargan las fuentes, de otra manera el texto aparece "invisible"*/
+  font-display: swap;
+  /*este atributo:valor aseguran que se muestre el texto mientras cargan las fuentes, de otra manera el texto aparece "invisible"*/
 }
 
 @font-face {
@@ -68,8 +69,11 @@ p {
   font-size: 1.2rem;
 }
 
-#menu, #pedido, #ingredientes {
-  scroll-margin-top: 4rem; /*Esta línea define dónde queda la pantalla al hacer click en los elementos del nav*/
+#menu,
+#pedido,
+#ingredientes {
+  scroll-margin-top: 4rem;
+  /*Esta línea define dónde queda la pantalla al hacer click en los elementos del nav*/
 }
 
 /*2. Nav styles*/
@@ -77,6 +81,7 @@ nav {
   position: sticky;
   top: 0;
   border-bottom: 2px black solid;
+  z-index: 1;
 }
 
 nav ul {
@@ -115,7 +120,12 @@ a:hover {
 }
 
 img {
+<<<<<<< HEAD
   object-fit: cover;/*esta línea indica a las imagenes que tomen el espacio establecido sin deformarse*/
+=======
+  object-fit: cover;
+  /*esta línea indica a las imagenes que tomen el espacio establecido sin deformarse*/
+>>>>>>> d9c25b2f5e254b1a91b58e967f8b33db73ad0be5
 }
 
 /*3. Header styles*/
@@ -221,91 +231,76 @@ header {
 }
 
 /*5. Menú styles*/
-
-.imgBurger {
-  width: 450px;
-  height: 675px;
-  margin: 25px auto;
-}
-
-#acompañamientos {
-  display: grid;
-  grid-template: repeat(1, 1fr) / repeat(3, 1fr);
-  align-items: center;
-  margin: 50px auto;
-  width: 100%;
-}
-
-.imgAcompañamiento {
+.imgBurger,
+.imgAcompañamiento,
+.imgBeer,
+.imgBebida,
+.imgPostre,
+.flechaSlider 
+ {
+  object-fit: cover;
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  display: block;
 }
 
-#menu #beers {
-  margin: 50px auto;
+#menuSlider p{
+  margin-bottom: 1rem;
 }
 
-#beers {
-  display: grid;
-  grid-template: repeat(2, 1fr) / repeat(2, 300px);
-  text-align: center;
-  width: 650px;
+#menuSlider div{
+  width: 300px;
+  height: 600px;
+  justify-content: center;
+  margin: 0 2rem;
   align-items: center;
-}
-
-#beers #superGose {
-  grid-area: 1/1/2/2;
-}
-
-#beers #midnigth {
-  grid-area: 2/1/3/2;
-}
-
-.imgBeer {
-  width: 200px;
-  height: 300px;
-}
-
-#bebidas {
-  width: 100%;
-  display: grid;
-  grid-template: 1fr / repeat(3, 1fr);
-  margin-bottom: 50px;
-}
-
-.imgBebida {
-  height: 300px;
-  width: 200px;
-  border-radius: 50%;
 }
 
 #menu {
   margin-bottom: 40px;
+  padding: 1rem;
+}
+
+#menuSlider {
+  display: flex;
+  overflow-y: auto;
+  height: 500px;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+#flechaDerechaSlider h3 {
+  margin-bottom: 4rem;
 }
 
 /*6. Pedido styles*/
 label {
-  display: inline-flex; /* Esta línea hace que las etiquetas se comporten como en línea, lo que permiten centrarlas verticalmente*/
+  display: inline-flex;
+  /* Esta línea hace que las etiquetas se comporten como en línea, lo que permiten centrarlas verticalmente*/
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"],
+input[type="checkbox"] {
   width: 30px;
   height: 30px;
   margin: 10px;
-  vertical-align: middle; /* Centra verticalmente */
-  margin-right: 10px; /* Espacio entre los botones de radio y las etiquetas */
+  vertical-align: middle;
+  /* Centra verticalmente */
+  margin-right: 10px;
+  /* Espacio entre los botones de radio y las etiquetas */
   display: inline-flex;
 
 }
 
-#mostrarPedido, #agregarBurger, #procederConPago {
+#mostrarPedido,
+#agregarBurger,
+#procederConPago {
   width: 150px;
   height: 50px;
 }
 
 #imgPrePedido {
-  width: 111px ;
+  width: 111px;
   height: 100px;
   margin-bottom: 40px;
 }
@@ -336,7 +331,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 #listaPedidosDiv li::before {
- content: url("resources/iconos/miniBurger.png");
+  content: url("resources/iconos/miniBurger.png");
 }
 
 form {
@@ -412,7 +407,7 @@ footer {
   }
 
   nav ul {
-    justify-content: space-around ;
+    justify-content: space-around;
   }
 
   #divRedes img {
@@ -466,6 +461,26 @@ footer {
 
   /*4. Ingredientes styles*/
   #ingredientes {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(8, 1fr) / repeat(2, 50%);
+  margin: 50px auto;
+  align-items: center;
+  border: 2px black solid;
+  text-align: center;
+}
+
+#ingredientes p {
+  margin: auto 10px;
+}
+
+.imgIngrediente {
+  width: 200px;
+  height: 200px;
+  margin: 5px auto;
+}
+
+  /* #ingredientes {
     width: 89%;
     display: flex;
     flex-wrap: wrap;
@@ -481,72 +496,8 @@ footer {
     height: 300px;
     margin: 5px auto;
     border-radius: 5px;
-  }
+  } */
 
-  /*5. Menú styles*/
-  .imgBurger {
-    width: 90%;
-    height: 570;
-    margin: 25px auto;
-  }
-
-  #acompañamientos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 50px auto;
-    width: 100%;
-  }
-
-  .imgAcompañamiento {
-    width: 85%;
-    height: 200px;
-  }
-
-  #menu #beers {
-    margin: 20px auto;
-  }
-
-  #beers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-  }
-
-  #midnigth,
-  #superGose {
-    margin: 30px auto 10px;
-  }
-
-  .imgBeer {
-    width: 200px;
-    height: 300px;
-    border-radius: 5px;
-  }
-
-  #bebidas {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 50px;
-  }
-
-  .imgBebida {
-    height: 300px;
-    border-radius: 50%;
-    padding: 5px 15px;
-  }
-
-  #postres .imgIngrediente {
-    height: 300px;
-    width: 350px;
-  }
-
-  #menu {
-    margin-bottom: 40px;
-  }
 
   /*6. Pedido styles*/
   #imgPrePedido {
@@ -625,7 +576,7 @@ footer {
     width: 300px;
     height: 300px;
     margin: 20px auto;
-    
+
   }
 
   /*5. Menú styles*/
@@ -698,5 +649,82 @@ footer {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
+  }
+}
+
+.jello-horizontal {
+	-webkit-animation: jello-horizontal 2s infinite both;
+	        animation: jello-horizontal 2s infinite both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-11-11 19:10:30
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+@-webkit-keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
 }
