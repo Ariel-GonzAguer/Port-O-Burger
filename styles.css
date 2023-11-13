@@ -115,7 +115,7 @@ a:hover {
 }
 
 img {
-  object-fit: cover; /*esta línea indica a las imagenes que tomen el espacio establecido sin deformarse*/
+  object-fit: cover;/*esta línea indica a las imagenes que tomen el espacio establecido sin deformarse*/
 }
 
 /*3. Header styles*/
