@@ -119,15 +119,6 @@ a:hover {
   height: 50px;
 }
 
-img {
-<<<<<<< HEAD
-  object-fit: cover;/*esta línea indica a las imagenes que tomen el espacio establecido sin deformarse*/
-=======
-  object-fit: cover;
-  /*esta línea indica a las imagenes que tomen el espacio establecido sin deformarse*/
->>>>>>> d9c25b2f5e254b1a91b58e967f8b33db73ad0be5
-}
-
 /*3. Header styles*/
 header {
   height: 750px;
