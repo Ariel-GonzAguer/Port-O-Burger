@@ -320,6 +320,7 @@ input[type="checkbox"] {
 
 #listaPedidosDiv {
   border: 2px black solid;
+  min-height: 50px;
   height: auto;
   width: 95%;
   margin: 0 auto;
