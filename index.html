@@ -11,6 +11,7 @@
 
   <link href="styles.css" rel="stylesheet">
   <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/1917be8503.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -20,16 +21,16 @@
 
   <nav>
     <ul id="menuPrincipal">
-      <li id="menuGrid1"><a href="#menu">Menú</a></li>
-      <li id="menuGrid2"><a href="#ingredientes">Ingredientes</a></li>
-      <li id="menuGrid3"><a href="preguntasFrecuentes.html" target="_blank">Preguntas Frecuentes</a></li>
-      <li id="menuGrid4"><a href="#pedido">¡Hacé tu pedido!</a></li>
+      <li><a id="menuGrid1" href="#menu">Menú</a></li>
+      <li><a id="menuGrid2" href="#ingredientes">Ingredientes</a></li>
+      <li><a id="menuGrid3" href="preguntasFrecuentes.html" target="_blank">Preguntas Frecuentes</a></li>
+      <li><a id="menuGrid4" href="#pedido">¡Hacé tu pedido!</a></li>
       <li>
         <div id="divRedes">
           <ul>
-            <li><a href="#" class="redes"><img src="resources\iconos\fb.icono.png" alt="icono FB"></a></li>
-            <li><a href="#" class="redes"><img src="resources\iconos\ig.icono.png" alt="icono IG"></a></li>
-            <li><a href="#" class="redes"><img src="resources\iconos\tiktok.icono.png" alt="icono tiktok"></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook redes"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram redes"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok redes"></i></a></li>
           </ul>
         </div>
       </li>
@@ -51,7 +52,7 @@
 
         <div>
         <h3 class="flechaDerechaSlider">Burgers</h3>
-        <img src="resources\iconos\flechaDerecha.svg" alt="flecha sugiriendo deslizar a la derecha" class="flechaSlider jello-horizontal">
+        <i class="fa-regular fa-hand-point-right jello-horizontal flechaSlider"></i>
         </div>
         
         <div id="PortoClasica">
@@ -70,7 +71,7 @@
 
         <div>
         <h3 class="flechaDerechaSlider">Acompañamientos</h3>
-        <img src="resources\iconos\flechaDerecha.svg" alt="flecha sugiriendo deslizar a la derecha" class="flechaSlider jello-horizontal">
+        <i class="fa-regular fa-hand-point-right jello-horizontal flechaSlider"></i>
         </div>
 
         <div>
@@ -95,7 +96,7 @@
 
         <div>
         <h3 class="flechaDerechaSlider">Cervezas</h3>
-        <img src="resources\iconos\flechaDerecha.svg" alt="flecha sugiriendo deslizar a la derecha" class="flechaSlider jello-horizontal">
+        <i class="fa-regular fa-hand-point-right jello-horizontal flechaSlider"></i>
         </div>
 
         <div id="superGose">
@@ -114,7 +115,7 @@
 
         <div>
         <h3 class="flechaDerechaSlider">Bebidas</h3>
-        <img src="resources\iconos\flechaDerecha.svg" alt="flecha sugiriendo deslizar a la derecha" class="flechaSlider jello-horizontal">
+        <i class="fa-regular fa-hand-point-right jello-horizontal flechaSlider"></i>
         </div>
 
         <div>
@@ -137,7 +138,7 @@
 
         <div>
         <h3 class="flechaDerechaSlider">Postres</h3>
-        <img src="resources\iconos\flechaDerecha.svg" alt="flecha sugiriendo deslizar a la derecha" class="flechaSlider jello-horizontal">
+        <i class="fa-regular fa-hand-point-right jello-horizontal flechaSlider"></i>
         </div>
 
         <div>
@@ -207,19 +208,21 @@
         notas ahumadas y sabor increíble te sorprenderán.</p>
     </section>
 
-    <img src="resources\iconos\hamburguesaPre.png" alt="hamburguesa en blanco y negro" id="imgPrePedido">
+    <i id="burgerIcon" class="fa-solid fa-burger"></i>
 
     <!--Pedido section-->
     <section id="pedido">
       <form action="" method="GET" id="formulario">
         <h2>Armá tu pedido</h2>
-        <p>Hacé tu pedido facilmente, una hamburguesa a la vez, de la siguiente forma:<br><br>
+        <p>¡Hacé tu pedido facilmente, una hamburguesa a la vez!</p><br>
+        <details><summary>Guía detallada</summary><p>Hacé tu pedido facilmente, una hamburguesa a la vez, de la siguiente forma:<br><br>
         Primero elegí tu hamburguesa, papas y bebida. <br>
         Desupués elegí si querés algún adicional.<br> ¡Cerrar con un postre siempre es buena idea!<br><br>
         Contanos si tenés alguna petición en particular y después presioná el botón <b>Mostrar Pedido</b>.<br><br>
-        Revisá y confirmá tu pedido en el recuadro de <b>Confirmá tu orden</b> y presioná el botón <b>Agregar Burger</b>.<br>
+        Revisá y confirmá tu pedido en el recuadro de <b>Confirmá tu orden</b>. Si querés cambiar algo del pedido antes de confirmarlo, solo volvé a seleccionar las opciones que querés y el pedido se actualizará en la pantalla.<br>Después presioná el botón <b>Agregar Burger</b>.<br>
         Cuando ya tengás todo tu pedido completo dale a <b>Proceder con pago</b> y ¡listo!
-        </p><br><br>
+        </p></details>
+        <br><br>
 
         <p><b>¿Cuál Burger querés?</b></p>
         <label for="PortOBurger">Port-O-Burger</label>
