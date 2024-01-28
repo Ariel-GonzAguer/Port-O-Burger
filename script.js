@@ -4,6 +4,7 @@ const resultado = document.getElementById("resultado");
 const procederConPagoBtn = document.getElementById("procederConPago");
 const agregarBurgerBtn = document.getElementById("agregarBurger");
 const listaPedidosUl = document.getElementById("listaPedidosUl");
+const borrarPedido = document.getElementById('borrarPedido');
 
 // eventListeners
 
@@ -21,8 +22,12 @@ mostrarPedidoBtn.addEventListener("click", () => {
       extrasSeleccionados.push(" " + extra.value);
     }
   });
-  
-  const textoExtra = document.querySelector("textarea[name=textoExtra]").value;
+
+  if (extrasSeleccionados.length === 0) {
+    extrasSeleccionados.push('Sin extras');
+  }
+
+  const textoExtra = document.querySelector("textarea[name=textoExtra]").value || 'Sin notas';
 
   resultado.innerText = `Tu hamburguesa: ${hamburguesa}.
   Tus papas: ${papas}.
@@ -41,7 +46,7 @@ agregarBurgerBtn.addEventListener("click", () => {
     } else {
       let nuevaBurger = document.createElement("li");
       nuevaBurger.textContent = resultado.innerText;
-      document.getElementById("listaPedidosUl").appendChild(nuevaBurger);
+      listaPedidosUl.appendChild(nuevaBurger);
     }
   } catch (error) {
     console.error(error);
@@ -60,4 +65,15 @@ procederConPagoBtn.addEventListener("click", () => {
   } catch (error) {
     console.error(error);
   }
+})
+
+// borrar último pedido añadido
+borrarPedido.addEventListener("click", () => {
+try {
+  let lastBurger = listaPedidosUl.lastElementChild;
+  listaPedidosUl.removeChild(lastBurger);
+} catch (error) {
+  console.error(error);
+  alert('No hay nada que borrar')
+}
 })

@@ -294,9 +294,17 @@ input[type="checkbox"] {
 
 #mostrarPedido,
 #agregarBurger,
-#procederConPago {
+#procederConPago,
+#borrarPedido {
   width: 150px;
   height: 50px;
+}
+
+#borrarPedido {
+  margin: 0 5px;
+  color: white;
+  font-weight: bold;
+  background-color: black;
 }
 
 #burgerIcon {
