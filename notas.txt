@@ -1,0 +1,2 @@
+añadir DE NUEVO el settimeout para el proceder con pago, agregar filter: blur(6px) con 3000 de delay.
+Agregar transition a body: 1s linear

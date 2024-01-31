@@ -57,7 +57,10 @@ agregarBurgerBtn.addEventListener("click", () => {
 procederConPagoBtn.addEventListener("click", () => {
   try {
     if (listaPedidosUl.innerText) {
+      document.body.style= 'filter: blur(6px)';
+    setTimeout(() => {
       window.open("pagoMock.html"); //esto abre una nueva página al dar click al botón indicado
+    }, 4000)
     } else {
       alert('Aún no hay nada que pagar.');
       throw new Error('Intento de pago incorrecto.')
