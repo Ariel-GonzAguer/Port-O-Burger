@@ -57,7 +57,7 @@ agregarBurgerBtn.addEventListener("click", () => {
 procederConPagoBtn.addEventListener("click", () => {
   try {
     if (listaPedidosUl.innerText) {
-      document.body.style= 'filter: blur(6px)';
+      document.body.style= 'filter: blur(3px)';
     setTimeout(() => {
       window.open("pagoMock.html"); //esto abre una nueva página al dar click al botón indicado
     }, 4000)
